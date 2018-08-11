@@ -1,7 +1,7 @@
-class Emp
+export class Emp
  {
     name;
-    age;c
+    age;
     salary;
     designation;
     constructor(name, age, salary, designation) {
@@ -15,11 +15,11 @@ class Emp
     }
 }
 var v1 = new Emp("sriram", 23, 25000, "software developer");
-var v2 = new Emp("ram", 23, 25000, "software developer");
-console.log(v1.displayDetails());
-console.log(v2.displayDetails());
 
-class Programmer extends Emp{
+console.log(v1.displayDetails());
+
+
+/**class Programmer extends Emp{
     address;
     constructor(name, age, salary, designation,address)
     {
@@ -33,4 +33,4 @@ class Programmer extends Emp{
    }
 }
 var v3 = new Programmer("Ram",22,25000,"UI","BANGALORE");
-v3.displayAll();
+v3.displayAll();*/

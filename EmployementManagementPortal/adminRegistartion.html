@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Employeement Management Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        function inputAlphabet(inputtext, alertMsg) {
+            var alphaExp = /^[a-zA-Z]+$/;
+            if (inputtext.value.match(alphaExp)) {
+                return true;
+            } else {
+                document.getElementById('s1').innerText = alertMsg;
+                inputtext.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="f1"></form>
+    <div class="jumbotron text-center">
+        <h1>Admin Registartion</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="email">Name:</label>
+                    <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" onclick="inputAlphabet()"><span id="s1">Enter</span>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Email:</label>
+                    <input type="email" class="form-control" id="mail" placeholder="Enter password" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">PhoneNumber:</label>
+                    <input type="number" class="form-control" id="number" placeholder="Enter number" name="number">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pass1" placeholder="Enter password" name="password1">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">ConfirmPassword:</label>
+                    <input type="password" class="form-control" id="pass2" placeholder="Enter password" name="password2">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+    </form>
+
+</body>
+
+</html>
